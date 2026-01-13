@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ammodiz - Signup</title>
+    <style>
+      .fullpage {
+        height: 500px;
+        margin: 0px;
+      }
+      body {
+        margin: 0px;
+        height: 590px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(#050403, #03395c);
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        align-content: center;
+      }
+      label {
+        display: block;
+        font-weight: 300;
+        color: rgb(92, 90, 90);
+        margin-left: 70px;
+        margin-top: 50px;
+        font-size: 20px;
+      }
+      input {
+        text-align: left;
+        position: relative;
+        left: 65px;
+        bottom: 15px;
+        height: 30px;
+        width: 70%;
+        border: 0px;
+        background-color: transparent;
+        border-bottom: 2px solid gray;
+      }
+      .signup {
+        position: relative;
+        left: 120px;
+        width: 1.5in;
+        background-image: linear-gradient(#050403, #03395c);
+        color: white;
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 5px;
+        border: 0px;
+      }
+      .signup:hover {
+        background-image: linear-gradient(white);
+        border: 0px;
+        color: black;
+        box-shadow: 0 0 5px rgb(54, 113, 207), 0 0 10px rgb(54, 113, 207),
+          0 0 14px rgb(54, 113, 207), 0 0 16px rgb(54, 113, 207);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fullpage">
+      <div class="content">
+        <form onsubmit="signup(event)"
+          style="
+            width: 400px;
+            height: 500px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+          "
+        >
+          <label for="name">Name</label><br />
+          <input type="text" id="name" placeholder="Enter your name" />
+          <label for="email">E-mail</label><br />
+          <input type="email" id="email" placeholder="Enter your email" />
+          <label for="password">Password</label><br />
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          /><br /><br />
+          <button type="submit"  class="signup">
+            Signup
+          </button>
+        </form>
+        <script>
+            function signup(event){
+                event.preventDefault();
+                    const name= document.getElementById("name").value;
+                    const email=document.getElementById("email").value;
+                    const password=document.getElementById("password").value;
+                    localStorage.setItem("name",name);
+                    localStorage.setItem("email",email);
+                    localStorage.setItem("password",password);
+                    alert("signup successful! login required")
+                    window.location.href="login.html";
+            }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
