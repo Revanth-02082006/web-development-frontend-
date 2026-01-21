@@ -1,208 +1,237 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ammodiz</title>
-        <style>
-            .fullpage{
-                margin: 0px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            .contentwebpage{
-                height: 670px;
-                width: 100%;
-                background-color: rgb(238, 248, 250);
-            }
-            .navbarcontents a{
-                position: relative;
-                left: 25px;
-                text-align: center;
-                text-decoration: none;
-                color: black;
-                padding: 16px;
-                background-color: white;
-                
-            }
-            .navbarcontents a:hover{
-                background-color: rgb(213, 249, 254);
-                transition: 0.3s;
-                padding: 20px;
-            }
-            .registration{
-                position: relative;
-                left: 100px;
-                border-radius: 50px;
-                padding: 15px;
-                width: 1.5in;
-                background-color: rgb(54, 113, 207);
-                color: white;
-                border: 1px solid gray;
-            }
-            .registration:hover{
-                color: black;
-                background-color: white;
-                border: 1px solid gray;
-                padding: 20px;
-                transition: 0.3s ease;
-                box-shadow: 
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammodiz</title>
+    <style>
+        .fullpage {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .contentwebpage {
+            height: 670px;
+            width: 100%;
+            background-color: rgb(238, 248, 250);
+        }
+
+        .navbarcontents a {
+            position: relative;
+            left: 25px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            padding: 16px;
+            background-color: white;
+
+        }
+
+        .navbarcontents a:hover {
+            background-color: rgb(213, 249, 254);
+            transition: 0.3s;
+            padding: 20px;
+        }
+
+        .registration {
+            position: relative;
+            left: 100px;
+            border-radius: 50px;
+            padding: 15px;
+            width: 1.5in;
+            background-color: rgb(54, 113, 207);
+            color: white;
+            border: 1px solid gray;
+        }
+
+        .registration:hover {
+            color: black;
+            background-color: white;
+            border: 1px solid gray;
+            padding: 20px;
+            transition: 0.3s ease;
+            box-shadow:
                 0 0 5px rgb(54, 113, 207),
                 0 0 10px rgb(54, 113, 207),
                 0 0 14px rgb(54, 113, 207),
                 0 0 16px rgb(54, 113, 207);
-            }
-            .pagecontents{
-                text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 40px;
-                font-weight: bold;
-            }
-            em{
-                color: rgb(255, 162, 0);
-            }
-            .request{
-                border-radius: 50px;
-                padding: 15px;
-                width: 200px;
-                background-color: rgb(54, 113, 207);
-                color: white;
-                border: 1px solid gray;
-            }
-            .book{
-                border-radius: 50px;
-                padding: 15px;
-                width: 200px;
-                background-color: rgb(255, 255, 255);
-                color: black;
-                border: 1px solid gray;
-            }
-            .request:hover{
-                color: black;
-                background-color: white;
-                border: 1px solid gray;
-                transition: 0.3s ease;
-                box-shadow: 
+        }
+
+        .pagecontents {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        em {
+            color: rgb(255, 162, 0);
+        }
+
+        .request {
+            border-radius: 50px;
+            padding: 15px;
+            width: 200px;
+            background-color: rgb(54, 113, 207);
+            color: white;
+            border: 1px solid gray;
+        }
+
+        .book {
+            border-radius: 50px;
+            padding: 15px;
+            width: 200px;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            border: 1px solid gray;
+        }
+
+        .request:hover {
+            color: black;
+            background-color: white;
+            border: 1px solid gray;
+            transition: 0.3s ease;
+            box-shadow:
                 0 0 6px rgb(54, 113, 207),
                 0 0 10px rgb(54, 113, 207),
                 0 0 14px rgb(54, 113, 207),
                 0 0 16px rgb(54, 113, 207);
-            }
-            .book:hover{
-                color: white;
-                background-color:rgb(54, 113, 207);
-                border: 1px solid gray;
-                transition: 0.3s ease;
-                box-shadow: 
-                0 0 5px  gray,
+        }
+
+        .book:hover {
+            color: white;
+            background-color: rgb(54, 113, 207);
+            border: 1px solid gray;
+            transition: 0.3s ease;
+            box-shadow:
+                0 0 5px gray,
                 0 0 10px gray,
                 0 0 14px gray,
                 0 0 16px gray;
-            }
-            .fullpage2{
-                margin: 0px;
-                height: 300px;
-            }
-            .contentcanvas2{
-                margin-left:10px;
-                width: 45%;
-                margin-top: 100px;
-            }
-            .canvascontent2{
-                margin: 10px;
-                text-align: left;
-                width: auto;
-            }
-            .h12{
-                text-align: left;
-                margin: 10px;
-                color: rgb(71, 130, 208);
-                font-size: 35px;
-            }
-            .h22{
-                text-align: left;
-                margin: 10px;
-                font-size: 30px;
-                font-weight: bold;
-            }
-            .p2{
-                font-size: 26px;
-                text-align: left;
-                margin: 10px;
-            }
-            .button2{
-                justify-content: left;
-                background-color: black;
-                color: white;
-                padding: 15px;
-                width: 2in;
-                border-radius: 25px;
-                text-align: center;
-                border: 0px;
-            }
-            .canvasimage2{
-                height: 400px;
-                margin-top: 0px;
-                position: relative;
-                left: 550px;
-                width: 400px;
-                background-color: blue;
-                bottom: 450px;
-            }
-            .button2:hover{
-                background-color: white;
-                color: black;
-                transition: 0.3s;
-                box-shadow: 
+        }
+
+        .fullpage2 {
+            margin: 0px;
+            height: 300px;
+        }
+
+        .contentcanvas2 {
+            margin-left: 10px;
+            width: 45%;
+            margin-top: 100px;
+        }
+
+        .canvascontent2 {
+            margin: 10px;
+            text-align: left;
+            width: auto;
+        }
+
+        .h12 {
+            text-align: left;
+            margin: 10px;
+            color: rgb(71, 130, 208);
+            font-size: 35px;
+        }
+
+        .h22 {
+            text-align: left;
+            margin: 10px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .p2 {
+            font-size: 26px;
+            text-align: left;
+            margin: 10px;
+        }
+
+        .button2 {
+            justify-content: left;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            width: 2in;
+            border-radius: 25px;
+            text-align: center;
+            border: 0px;
+        }
+
+        .canvasimage2 {
+            height: 400px;
+            margin-top: 0px;
+            position: relative;
+            left: 550px;
+            width: 400px;
+            background-color: blue;
+            bottom: 450px;
+        }
+
+        .button2:hover {
+            background-color: white;
+            color: black;
+            transition: 0.3s;
+            box-shadow:
                 0 0 10px rgb(51, 51, 146),
                 0 0 15px rgb(51, 51, 146),
                 0 0 18px rgb(51, 51, 146),
                 0 0 20px rgb(51, 51, 146);
-            }
-            .page3cont{
-                display: flex;
-                justify-content: left;
-                margin-left: 50px;
-            }
-            .pg3h3{
-                width: 300px;
-                color: rgb(34, 33, 33);
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 20px;
-                margin-left: 50px;
-                margin-top: 100px;
-            }
-            .pg3p{
-                font-family: Arial, Helvetica, sans-serif;
-                color: gray;
-                width: 300px;
-                font-size: 17px;
-                font-weight: 100;
-            }
-            .imageicon{
-                height: 50px;
-                width: 50px;
-            }
-            .page4cont{
-                width: 100%;
-                justify-content: center;
-                display: flex;
-                text-align: center;
-            }
-            .pg4h2{
-                width: 100%;
-                color: rgb(34, 33, 33);
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-                margin-top: 100px;
-            }
-            .pg4p{
-                font-family: Arial, Helvetica, sans-serif;
-                color: rgb(57, 105, 171);
-                width: 180px;
-                font-size: 17px;
-                font-weight: 600;
-                padding: 25px;
-            }
-            .footer{
+        }
+
+        .page3cont {
+            display: flex;
+            justify-content: left;
+            margin-left: 50px;
+        }
+
+        .pg3h3 {
+            width: 300px;
+            color: rgb(34, 33, 33);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin-left: 50px;
+            margin-top: 100px;
+        }
+
+        .pg3p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+            width: 300px;
+            font-size: 17px;
+            font-weight: 100;
+        }
+
+        .imageicon {
+            height: 50px;
+            width: 50px;
+        }
+
+        .page4cont {
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            text-align: center;
+        }
+
+        .pg4h2 {
+            width: 100%;
+            color: rgb(34, 33, 33);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .pg4p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(57, 105, 171);
+            width: 180px;
+            font-size: 17px;
+            font-weight: 600;
+            padding: 25px;
+        }
+
+        .footer {
             gap: 130px;
             margin-top: 100px;
             height: 400px;
@@ -213,116 +242,169 @@
             overflow: hidden;
             display: flex;
         }
-        .footer-h3{
+
+        .footer-h3 {
             padding: 50px;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 15px;
         }
-        .footer-links a{
+
+        .footer-links a {
             margin-left: 50px;
             color: white;
             font-size: 13px;
             font-family: Arial, Helvetica, sans-serif;
             text-decoration: none;
         }
-        .footer-links a:hover{
+
+        .footer-links a:hover {
             text-decoration: underline;
         }
-        .logo-image{
-            height:50px; 
-            width:250px;
+
+        .logo-image {
+            height: 50px;
+            width: 250px;
             position: relative;
             right: 50px;
         }
+        .footer-2-div{
+            display: flex;
+            height: 1in;
+            width: 100%;
+            background-color: white;
+        }
+        .footer-2-img{
+            margin-top: 25px;
+            height: 0.6in;
+            width: 3in;
+        }
+        .footer-2-copyright{
+            color: gray;
+            display: flex;
+            margin-top: 45px;
+            padding-left: 50px;
+        }
+        .footer-2-display{
+            display: flex;
+        }
+    </style>
+</head>
 
-        </style>
-    </head>
-    <body>
-        <div class="fullpage">
-            <div class="contentwebpage">
-                <div class="navbarcontents" style="display: flex;background-color: white;justify-content: center;gap: 10px;">
-                    <img src="/Assets/Ammodiz logo.png" alt="" class="logo-image">
-                    <a href="products.html">Products</a>
-                    <a href="solutions.html">Solutions</a>
-                    <a href="ourdata.html">Our Data</Data></a>
-                    <a href="demo.html">Demo</a>
-                    <button class="registration" onclick="window,location.href='login.html'">Login</button>
-                    <button class="registration" onclick="window.location.href='signup.html'">Sign Up</button>
-                    </div><br><br><br>
-                <div class="pagecontents">
-                    <p>Build a pipeline that never goes down with <br><em>Ammodiz Enterprise</em></p>
-                    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;color: black;text-align: center;font-weight: normal;">Get endless access to company and contact intelligence from our 400 million+ records.</p>
-                    <button class="request">Request for free sample</button>
-                    <button class="book">Book for Demo</button>
+<body>
+    <div class="fullpage">
+        <div class="contentwebpage">
+            <div class="navbarcontents"
+                style="display: flex;background-color: white;justify-content: center;gap: 10px;">
+                <img src="/Assets/Ammodiz logo.png" alt="" class="logo-image">
+                <a href="products.html">Products</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="ourdata.html">Our Data</Data></a>
+                <a href="demo.html">Demo</a>
+                <button class="registration" onclick="window,location.href='login.html'">Login</button>
+                <button class="registration" onclick="window.location.href='signup.html'">Sign Up</button>
+            </div><br><br><br>
+            <div class="pagecontents">
+                <p>Build a pipeline that never goes down with <br><em>Ammodiz Enterprise</em></p>
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 15px;color: black;text-align: center;font-weight: normal;">
+                    Get endless access to company and contact intelligence from our 400 million+ records.</p>
+                <button class="request">Request for free sample</button>
+                <button class="book">Book for Demo</button>
+            </div>
+        </div>
+    </div>
+    <div class="fullpage2" style="height: 500px;">
+        <div class="contentcanvas2">
+            <div class="canvascontent2">
+                <h2 class="h12">Ramp-up Hiring Pace</h2>
+                <p class="h22">What is more awesome than being able to hire the right talents in the pace of sound?</p>
+                <p class="p2">Always enjoy the list of ideal candidates within your reach by managing a list of
+                    favorites in the respective positions.</p>
+                <p class="p2">Keep an eye on their role/designation/company changes to be informed for future decisions.
+                    Ammodiz helps you to be equipped with ideal candidates in your shortlist and help you plan your
+                    reach out.</p><br><br>
+                <button class="button2">Find candidates</button>
+                <div class="canvasimage2" style="display: flex;">
+                    <img
+                        src="https://static.vecteezy.com/system/resources/thumbnails/031/580/966/small_2x/a-multicolored-building-with-circular-windows-and-balconies-generative-ai-photo.jpeg">
+                    <br>
                 </div>
             </div>
         </div>
-        <div class="fullpage2" style="height: 500px;">
-            <div class="contentcanvas2">
-                <div class="canvascontent2">
-                    <h2 class="h12">Ramp-up Hiring Pace</h2>
-                    <p class="h22">What is more awesome than being able to hire the right talents in the pace of sound?</p>
-                    <p class="p2">Always enjoy the list of ideal candidates within your reach by managing a list of favorites in the respective positions.</p>
-                    <p class="p2">Keep an eye on their role/designation/company changes to be informed for future decisions. Ammodiz helps you to be equipped with ideal candidates in your shortlist and help you plan your reach out.</p><br><br>
-                    <button class="button2">Find candidates</button>
-                    <div class="canvasimage2" style="display: flex;">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/031/580/966/small_2x/a-multicolored-building-with-circular-windows-and-balconies-generative-ai-photo.jpeg"> <br>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="page3cont">
-            <h3 class="pg3h3"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/8392/8392166.png" style="position: relative;left: 130px;"><br><br> Scale your sales and marketing efforts
-            <p class="pg3p">Reach out to more relevant contacts in short-time. Set up your custom filters and get the relevant contacts exported in a minute. Enable your sales and marketing team to target at scale.</p></h3>
-            <h3 class="pg3h3"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/8392/8392170.png" style="position: relative;left: 130px;"><br><br> Add more intelligence to your database
-            <p class="pg3p">Request for more intelligence on your prospects anytime with our custom data and Ammodiz Enhance. Manage credits between multiple solutions to get a 360 degree view of your customer</p></h3>
-            <h3 class="pg3h3"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/8392/8392108.png" style="position: relative;left: 130px;"><br><br> No compliance issue
-            <p class="pg3p">Save time let us know the region you are targeting and we will help you with all compliance info about the same region. Our team will cross check with the compliance guidelines to avoid any hassle in campaign execution</p></h3>
-        </div>
-        <div>
-            <h2 class="pg4h2">A Database trusted trusted by global B2B leaders</h2><br><br>
-        </div>
-        <div class="page4cont">
-            <p class="pg4p"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"><br> 100+ million <br> contact information</p>
-            <p class="pg4p"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/9946/9946341.png"><br> 18+ million <br> direct dials</p>
-            <p class="pg4p"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/10365/10365286.png"><br> 5 million <br> companies</p>
-            <p class="pg4p"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/3207/3207604.png"><br> Guaranteed 95% <br> above accuracy</p>
-        </div>
-        <div class="footer">
-    <footer class="footer-links">
-        <h3 class="footer-h3">SOLUTIONS</h3>
-        <a href="#">Chrome Extension</a><br><br>
-        <a href="#">Healthcare Platform</a><br><br>
-        <a href="#">Prospecting Platform</a><br><br>
-        <a href="#">Contact API comming soon</a><br><br>
-        <a href="#">Email Finder</a><br><br>
-        <a href="#">Custom Data</a><br><br>
-        <a href="#">NPI Lookup</a>
-    </footer>
-    <footer class="footer-links">
-        <h3 class="footer-h3">PRODUCTS</h3>
-        <a href="#">Pricing</a><br><br>
-        <a href="#">Our Data</a><br><br>
-        <a href="#">Privacy Policy</a><br><br>
-        <a href="#">Cookies Policy</a><br><br>
-        <a href="#">GDPR Compliance</a><br><br>
-        <a href="#">Terms & Conditions</a><br><br>
-    </footer>
-    <footer class="footer-links">
-        <h3 class="footer-h3">ABOUT US</h3>
-        <a href="#">Blog</a><br><br>
-        <a href="#">Videos</a><br><br>
-        <a href="#">Ebooks</a><br><br>
-        <a href="#">Company Directory</a><br><br>
-        <a href="#">Healthcare Directory</a><br><br>
-    </footer>
-    <footer class="footer-links">
-        <h3 class="footer-h3">HELP</h3>
-        <a href="#">Contact us</a><br><br>
-        <a href="#">Terms & Conditions</a><br><br>
-        <a href="#">Privacy Policy</a><br><br>
-    </footer>
-</div>
-    </body>
+    </div>
+    <div class="page3cont">
+        <h3 class="pg3h3"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/8392/8392166.png"
+                style="position: relative;left: 130px;"><br><br> Scale your sales and marketing efforts
+            <p class="pg3p">Reach out to more relevant contacts in short-time. Set up your custom filters and get the
+                relevant contacts exported in a minute. Enable your sales and marketing team to target at scale.</p>
+        </h3>
+        <h3 class="pg3h3"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/8392/8392170.png"
+                style="position: relative;left: 130px;"><br><br> Add more intelligence to your database
+            <p class="pg3p">Request for more intelligence on your prospects anytime with our custom data and Ammodiz
+                Enhance. Manage credits between multiple solutions to get a 360 degree view of your customer</p>
+        </h3>
+        <h3 class="pg3h3"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/8392/8392108.png"
+                style="position: relative;left: 130px;"><br><br> No compliance issue
+            <p class="pg3p">Save time let us know the region you are targeting and we will help you with all compliance
+                info about the same region. Our team will cross check with the compliance guidelines to avoid any hassle
+                in campaign execution</p>
+        </h3>
+    </div>
+    <div>
+        <h2 class="pg4h2">A Database trusted trusted by global B2B leaders</h2><br><br>
+    </div>
+    <div class="page4cont">
+        <p class="pg4p"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"><br> 100+
+            million <br> contact information</p>
+        <p class="pg4p"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/9946/9946341.png"><br> 18+
+            million <br> direct dials</p>
+        <p class="pg4p"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/10365/10365286.png"><br> 5
+            million <br> companies</p>
+        <p class="pg4p"><img class="imageicon" src="https://cdn-icons-png.flaticon.com/128/3207/3207604.png"><br>
+            Guaranteed 95% <br> above accuracy</p>
+    </div>
+    <div class="footer">
+        <footer class="footer-links">
+            <h3 class="footer-h3">SOLUTIONS</h3>
+            <a href="#">Chrome Extension</a><br><br>
+            <a href="#">Healthcare Platform</a><br><br>
+            <a href="#">Prospecting Platform</a><br><br>
+            <a href="#">Contact API comming soon</a><br><br>
+            <a href="#">Email Finder</a><br><br>
+            <a href="#">Custom Data</a><br><br>
+            <a href="#">NPI Lookup</a>
+        </footer>
+        <footer class="footer-links">
+            <h3 class="footer-h3">PRODUCTS</h3>
+            <a href="#">Pricing</a><br><br>
+            <a href="#">Our Data</a><br><br>
+            <a href="#">Privacy Policy</a><br><br>
+            <a href="#">Cookies Policy</a><br><br>
+            <a href="#">GDPR Compliance</a><br><br>
+            <a href="#">Terms & Conditions</a><br><br>
+        </footer>
+        <footer class="footer-links">
+            <h3 class="footer-h3">ABOUT US</h3>
+            <a href="#">Blog</a><br><br>
+            <a href="#">Videos</a><br><br>
+            <a href="#">Ebooks</a><br><br>
+            <a href="#">Company Directory</a><br><br>
+            <a href="#">Healthcare Directory</a><br><br>
+        </footer>
+        <footer class="footer-links">
+            <h3 class="footer-h3">HELP</h3>
+            <a href="#">Contact us</a><br><br>
+            <a href="#">Terms & Conditions</a><br><br>
+            <a href="#">Privacy Policy</a><br><br>
+        </footer>
+    </div>
+    <div class="footer-2-div">
+        <footer class="footer-2-display">
+            <img src="/Assets/Ammodiz logo.png" alt="" class="footer-2-img" >
+            <p class="footer-2-copyright">© 2026 Ammodiz. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
 </html>

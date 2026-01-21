@@ -54,7 +54,7 @@
       .original {
         font-size: 40px;
       }
-      h1{
+      .h1{
         text-align: center;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
@@ -149,13 +149,118 @@
         0 0 14px rgb(54, 113, 207),
         0 0 16px rgb(54, 113, 207);
       }
-      
+      .aboutus-div{
+        display: flex;
+        margin-top: 0px;
+        width: 100%;
+        height: 600px;
+        background-color: black;
+      }
+      .aboutus-margin{
+        margin-left: 150px;
+      }
+      .aboutus-text{
+        text-align: left;
+        color:rgb(215, 115, 33); 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding-top: 110px;
+      }
+      .aboutus-heading{
+        font-size: 25px;
+        color: rgb(66, 190, 210);
+        text-align: left;
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 544;
+      }
+      .aboutus-para{
+        padding-right: 150px;
+        font-size: 18px;
+        color: white;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        width: 350px;
+        line-height: 25px;
+      }
+      .aboutus-para-2{
+        padding-right: 150px;
+        font-size: 18px;
+        color: white;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        width: 450px;
+        padding-top: 120px;
+      }
+      .aboutus-button-div{
+        padding-top: 35px;
+      }
+      .aboutus-button{
+        color: black;
+        background-color: white;
+        height: 35px;
+        width: 2.3in;
+        border: 0px;
+        border-radius: 50px;
+        font-weight: 500;
+      }
+      .aboutus-button:hover{
+        transition: 0.3s;
+        box-shadow:
+        0 0 5px rgb(54, 113, 207),
+        0 0 10px rgb(54, 113, 207),
+        0 0 14px rgb(54, 113, 207),
+        0 0 16px rgb(54, 113, 207);
+      }
+      .footer-2-div{
+            display: flex;
+            height: 1in;
+            width: 100%;
+            background-color: white;
+        }
+        .footer-2-img{
+            margin-top: 25px;
+            height: 0.6in;
+            width: 3in;
+        }
+        .footer-2-copyright{
+            color: gray;
+            display: flex;
+            margin-top: 45px;
+            padding-left: 50px;
+        }
+        .footer-2-display{
+            display: flex;
+        }
     </style>
   </head>
   <body>
-    <div class="fullpage">
+    
+      <div class="aboutus-div">
+        <div class="aboutus-margin">
+          <h1 class="aboutus-text">ABOUT US</h1>
+          <h1 class="aboutus-heading">We Are Your Growth Enablers</h1>
+          <h1 class="aboutus-para">No one understands your business and its unique challenges better than you. We are eager as ever to learn them from you and provide you with personalized data solutions. We listen and serve you the data you need. <br><br>Count as your B2B data champion.</h1>
+          <div class="aboutus-button-div">
+            <button class="aboutus-button">Speak to our data experts now</button>
+          </div>
+        </div>
+        <div class="aboutus-para-2">
+          <ul>
+            <li>Data collection from 100+ of credible sources</li><br>
+            <li>Fresh, accurate, reliable data tailormade to solve your business problems</li><br>
+            <li>New industry information or datasets not commonly available in the market</li><br>
+            <li>A dedicated team of 800+ data experts to collect, verify, and validate your personalized data</li><br>
+            <li>Game-changing market insights for smarter decision-making and business</li><br>
+            <li>Strong customer support for any assistance you may require</li>
+          </ul>
+        </div>
+      </div>
+      <div class="fullpage"></div>
       <div class="content">
-        <h1>Our 16-Step Data Process</h1>
+        <h1 class="h1">Our 16-Step Data Process</h1>
         <div class="flex-content">
           <div class="box">
             <img src="https://cdn-icons-png.flaticon.com/128/14114/14114981.png" alt="" class="icon-img">
@@ -245,6 +350,12 @@
         <a href="#">Terms & Conditions</a><br /><br />
         <a href="#">Privacy Policy</a><br /><br />
       </footer>
+    </div>
+    <div class="footer-2-div">
+        <footer class="footer-2-display">
+            <img src="/Assets/Ammodiz logo.png" alt="" class="footer-2-img" >
+            <p class="footer-2-copyright">© 2026 Ammodiz. All rights reserved.</p>
+        </footer>
     </div>
   </body>
 </html>
