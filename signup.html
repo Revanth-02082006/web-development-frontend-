@@ -184,8 +184,11 @@
 <div class="footer-2-div">
         <footer class="footer-2-display">
             <img src="/Assets/Ammodiz logo.png" alt="" class="footer-2-img" >
-            <p class="footer-2-copyright">© 2026 Ammodiz. All rights reserved.</p>
+            <p class="footer-2-copyright">© <span id="year"></span> Ammodiz. All rights reserved.</p>
         </footer>
+        <script>
+            document.getElementById("year").textContent=new Date().getFullYear();
+        </script>
     </div>
   </body>
 </html>
